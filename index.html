@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e7e5c58e6.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           
+            <nav>
+                <img src="Images/LogoID.png" width="150" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="headertext">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Christian</span> <br>from Nigeria</h1>
+
+            </div>
+        </div>
+         
+    </div>
+<!-------------about------------------->
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/12.jpg" alt="Chris">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Creative and detail-oriented UI/UX Designer <br>with three years of experience in
+                          developing user <br>friendly and engaging digital 
+                        experiences. Skilled <br>in user research, 
+                        wireframing, prototyping, and interactive design. 
+                        <br>Passionate about creating user-centered designs that<br>
+                        enhance engagement and drive business growth. 
+                        <br>Experienced in collaborating with cross-functional<br>
+                        teams to bring creative ideas to live.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                              <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills" >
+                            <ul>
+                                <li><span>UI|UX</span><br>Designing Wep/App Interfaces</li>
+                                <li><span>Graphics Designer</span><br>Creating Awesome Designs that helps to <br> sale out Products fast</li>
+                                <li><span>Web Development</span><br>Web Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022-2023</span><br>Junior UI/UX Designer / Computer Tutor <br>Dots ICT Institute of Technology, Abeokuta, Ogun State, Nigeria</li>
+                                <li>Assisted in designing user-friendly interfaces for web and mobile applications</li>
+                                <li>Developed wireframes, mockups, and prototypes<br> to support the product development cycle</li>
+                                <li>Conducted user testing and gathered insights to refine design solutions.</li>
+                                <li>Worked closely with marketing and development<br> teams to align brand and user experience goals.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Udemy 2025</span><br>UI/UX Design Online Certification </li>
+                                <li><span>2014-2018</span><br>Bachelors Degree in Computer Science, 
+                                    Micheal Okpara University of<br> Agriculture Umudike, Abia State, Nigeria</li>
+                              
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------Services------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class ="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <ul>
+                    <li>Focus on user engagement and visual storytelling.</li>
+                    <li>High-converting landing pages for product launches, ads, or promotions.</li>
+                     <li>Optimized for both desktop and mobile users.</li>
+                     <li>Give outdated websites a fresh, modern look while<br> improving functionality</li>
+                     <li>UI/UX enhancements for better user retention.</li>
+                       <li>Mobile-friendly layouts that adapt to any screen size.</li>
+                       <li>Tested across major devices and browsers.</li>
+                </ul>
+                    <a href="#">Know More</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI|UX</h2>
+                <ul>
+                    <li>Clean, modern, and intuitive interfaces for web and mobile applications.</li>
+                    <li>Focus on visual hierarchy, consistency, and branding.</li>
+                    <li>Tools: Figma</li>
+                   
+                </ul>
+                <a href="#">Know More</a>
+            </div>
+
+             <div>
+                <i class="fa-solid fa-fill-drip"></i>
+                <h2>Graphics Design</h2> 
+               <ul>
+                 <li>Custom logos, color palettes, and typography that represent your brand's voice.</li>
+                 <li>Full brand style guide creation.</li>
+                  <li>Eye-catching designs for social media posts, banners, flyers, and ads</li>
+                      <li>Tailored content for Facebook, Instagram, Twitter, LinkedIn, and more.</li>
+                          <li>Brochures, business cards, posters, banners, and packaging design.</li>
+                            <li>High-resolution and print-ready formats.</li>
+               </ul>
+                <a href="#">Know More</a>
+                            
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!---------------Portfolio--------------------->
+<div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Works</h1>
+       <div id="work-list">
+        <div class="work">
+            <img src="Images/Work-8.jpg" alt="work2">
+            <div class="layer">
+                <h3>Medical Consultation App</h3>
+                <p>This is a modern, user-friendly medical consultation web app designed to simplify healthcare access. 
+                     It allows patients to seamlessly connect with licensed doctors for virtual consultations, manage prescriptions,
+                     and receive real-time medical support — all from the comfort of their homes.
+                     The platform is secure, intuitive, and tailored for both patients and healthcare providers,
+                     making it easier than ever to access quality care anytime, anywhere.</p>
+                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          <div class="work">
+            <img src="Images/Img-25.png" alt="work2">
+            <div class="layer">
+                <h3>Digital Mobile Banking for Opay</h3>
+                <p>For this project, I designed a modern and user-friendly mobile banking experience for OPay, a digital banking app aimed at simplifying financial transactions for everyday users.
+
+The core objective was to create an intuitive interface that offers seamless access to essential
+ banking features such as money transfers, bill payments, airtime top-ups, and wallet management. 
+I focused on a clean layout with bold visual hierarchy, ensuring that users could navigate easily without feeling overwhelmed.</p>
+                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+          <div class="work">
+            <img src="Images/work-4.jpg" alt="work2">
+            <div class="layer">
+                <h3>Graphics Design</h3>
+                <p>In a world where first impressions matter, great design is not a luxury — its a necessity.
+                     Whether you're building a brand, launching a product, or leveling up your social media, a skilled graphic designer can make all the difference
+
+                    Meet Christian, a creative and passionate graphics designer. 
+                    From logos and flyers to UI designs and social media content, every project is crafted with precision, purpose, and style. 
+                    With a keen eye for detail and a passion for storytelling through design,
+                    Christian helps brands stand out and connect with their audience.</p>
+                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+       </div>
+       <a href="#" class="btn">See More!</a>
+    
+
+
+
+       <!---------------Portfolio2--------------------->
+
+        <div id="work-list">
+        <div class="work">
+            <img src="Images/work-5.jpg" alt="work2">
+        </div>
+          <div class="work">
+            <img src="Images/work-6.jpg" alt="work2">
+        </div>
+          <div class="work">
+            <img src="Images/work-7.png" alt="work2">
+        </div>
+
+       </div>
+          <a href="#" class="btn">See More!</a>
+
+    </div>
+</div>
+
+<!---------------Contact Us--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p> <i class="fa-solid fa-phone"></i>07058741167</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-behance"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+
+                </div>
+                <a href="Images/NJOKU CHRISTIAN CHIADIKAOBI UI CV.pdf" download class="btn btn2">Download CV</a>
+
+
+            </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type= "text"name="Name" placeholder="Your Name" required>
+                     <input type="email" name="email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                     <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Christian. <i class="fa-solid fa-heart-circle-check"></i> Everything about me portfolio</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                 tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                 tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwRTsPX1RW8SvdRFmZi62vSZPHItnddaneeOQRX6bHlDwwD9cIpr8mJtKh5VAHpW8uI/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message Sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        }, 5000)
+        form.reset() 
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+   
+     
+</body>
+</html>
